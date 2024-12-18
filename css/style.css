@@ -88,10 +88,27 @@ textarea {
   Mobile First
   ===============================================*/
 
-html{}
+html {}
 
-body{
+body {
   font-family: Tahoma, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  border: solid, red, 1px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  border: solid, blue, 1px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
 }
 
 /* ==========================================================================
