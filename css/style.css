@@ -86,9 +86,8 @@ textarea {
 
 .content-wrapper {
   outline: 3px dotted red;
-  width: 100%;
-  max-width: ;
-  margin: 10px;
+  width: 95%;
+  /* margin: 10px; */
 }
 
 
@@ -105,7 +104,6 @@ body {
 }
 
 header {
-  /* margin: 100px 0px; */
   display: flex;
   justify-content: center;
   background-color: white;
@@ -119,9 +117,10 @@ header {
   align-items: center;
   /* background-color: white; */
   border: solid, darkorange, 1px;
+  margin: 10px 0 0 0;
 }
 
-nav ul{
+nav ul {
   list-style: none;
 }
 
@@ -131,13 +130,79 @@ header .content-wrapper {
   text-align: center;
 }
 
-#process-imagearea {
- max-width: 100%;   
+#process-section {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+#process-section .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#process-imagearea img {
+  max-width: 50%;
+}
+
+.process-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#aboutus-section {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+#contactus-section {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+#contactus-section .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contactus-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 footer {
+  color: white;
+  background-color: black;
   display: flex;
   justify-content: center;
+  text-align: center;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+  /* TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+  Style adjustments for tablets 
+  TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT */
+  process-section .content-wrapper {
+    margin: 0 10px 0 0;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+  /* DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+    Style adjustments for desktops
+    DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD */
+
+
+
 }
 
 /* ==========================================================================
@@ -223,9 +288,7 @@ footer {
    Modify as content requires.
    ========================================================================== */
 
-@media 
-
-@media only screen and (min-width: 35em) {
+@media @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
 
