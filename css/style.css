@@ -122,8 +122,8 @@ header {
 }
 
 nav {
-  display:flex;
-  flex-direction:column;
+  display: flex;
+  flex-direction: column;
   align-content: center;
 }
 
@@ -145,7 +145,7 @@ header .content-wrapper {
 }
 
 #process-section h2 {
-  margin:10px 0 0 0;
+  margin: 10px 0 0 0;
 }
 
 #process-section h3 {
@@ -190,6 +190,15 @@ header .content-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#contactus-name, #contactus-email {
+  width: 50%;
+}
+
+#contactus-information {
+  width: 50%;
+  height: 100px;
 }
 
 footer {
