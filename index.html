@@ -52,23 +52,25 @@
       </div>
       <h2>Getting A Cash Offer For Your Home</h2>
       <h3>Starts Here</h3>
-      <div class="process-inputs">
+      <div id="process-input-fields" class="process-inputs">
         <p>
           Just give us some basic information to work from. <br>We can create an initial quote and will contact you to
           explain
           our process and how we can be of service.<br>No commitments or obligations, just information.
         </p>
         <input type="text" maxlength="50" placeholder="*Name">
-        <input type="text" maxlength="50" placeholder="*Email">
+        <input type="email" maxlength="50" placeholder="*Email">
         <input type="text" maxlength="50" placeholder="*Phone">
         <input type="text" maxlength="150" placeholder="*Property Address">
-        <input type="text" maxlength="500"
+        <textarea maxlength="500"
           placeholder="Comments (Please include any information that may help us to valuate the property. For example if the AC doesn't work or the roof has a leak, etc.)">
-        <button>Submit</button>
-        <div id="process-submission-thanks">
-          <p>Thank you for contacting us! We will be in touch soon!</p>
-        </div>
+        </textarea>
+        <button onclick="processThankYou()">Submit</button>
       </div>
+      <div id="process-submission-thanks" class="hidden">
+        <p>Thank you for contacting us! We will be in touch soon!</p>
+      </div>
+
     </div>
   </div>
 
@@ -116,14 +118,14 @@
         <icon>facebook placeholder</icon>
         <icon>instagram placeholder</icon>
       </div>
-      <div class="contactus-inputs">
+      <div id="contactus-input-fields" class="contactus-inputs">
         <input type="text" id="contactus-name" name="name" maxlength="50" placeholder="*Name">
-        <input type="text" id="contactus-email" maxlength="50" placeholder="*Email">
+        <input type="email" id="contactus-email" maxlength="50" placeholder="*Email">
         <textarea id="contactus-information" placeholder="How can we be of help?"></textarea>
-        <button>Submit</button>
-        <div id="contactus-submission-thanks">
-          <h4>Thank you for contacting us! We will be in touch soon.</h4>
-        </div>
+        <button onclick="contactUsThankYou()">Submit</button>
+      </div>
+      <div id="contactus-submission-thanks" class="hidden" <h4>Thank you for contacting us! We will be in touch soon.
+        </h4>
       </div>
     </div>
   </div>

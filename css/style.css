@@ -87,6 +87,8 @@ textarea {
 .content-wrapper {
   outline: 3px dotted red;
   width: 95%;
+  padding-top: 20px;
+  padding-bottom: 20px;
   /* margin: 10px; */
 }
 
@@ -179,12 +181,25 @@ header .content-wrapper {
   color: white;
   display: flex;
   justify-content: center;
+  margin: 0 0 20px 0;
 }
 
 #contactus-section .content-wrapper {
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+
+.contactus-contact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#contactus-submission-thanks, #process-submission-thanks {
+  margin: 25px 0;
+  font-style: italic;
+  font-size: 1.5em;
 }
 
 .contactus-inputs {
@@ -236,6 +251,18 @@ a:link, a:visited {
 
 a:hover {
   color: #44c9f5;
+}
+
+/* input[type=email] {
+  font-style: italic;
+}
+
+input[type=text] {
+  font-style: italic;
+} */
+
+input::placeholder, textarea::placeholder{
+  font-style: italic;
 }
 
 
