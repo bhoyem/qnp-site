@@ -58,14 +58,20 @@
           explain
           our process and how we can be of service.<br>No commitments or obligations, just information.
         </p>
-        <input type="text" maxlength="50" placeholder="*Name">
-        <input type="email" maxlength="50" placeholder="*Email">
-        <input type="text" maxlength="50" placeholder="*Phone">
-        <input type="text" maxlength="150" placeholder="*Property Address">
-        <textarea maxlength="500"
-          placeholder="Comments (Please include any information that may help us to valuate the property. For example if the AC doesn't work or the roof has a leak, etc.)">
+        <form id="process-input-fields" class="process-inputs" onsubmit="return false">
+          <label for="name">Name:</label>
+          <input type="text" maxlength="50" placeholder="*Name" required>
+          <label for="email">Email:</label>
+          <input type="email" maxlength="50" placeholder="*Email" required>
+          <label for="phone">Phone:</label>
+          <input type="text" maxlength="50" placeholder="*Phone" required>
+          <label for="address">Property Address:</label>
+          <input type="text" maxlength="150" placeholder="*Property Address" required>
+          <textarea id="process-textarea" maxlength="500"
+            placeholder="Comments (Please include any information that may help us to valuate the property. For example if the AC doesn't work or the roof has a leak, etc.)">
         </textarea>
-        <button onclick="processThankYou()">Submit</button>
+          <input id="process-button" type="submit" value="Submit" onclick="processThankYou()">
+        </form>
       </div>
       <div id="process-submission-thanks" class="hidden">
         <p>Thank you for contacting us! We will be in touch soon!</p>
