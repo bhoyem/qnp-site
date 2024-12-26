@@ -13,8 +13,8 @@
   <meta property="og:url" content="">
   <meta property="og:image" content="">
 
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.png">
 
   <link rel="manifest" href="site.webmanifest">
@@ -45,42 +45,45 @@
     </div>
   </header>
 
+  <!-- ******************************* Process Section ****************************** -->
   <div id="process-section">
     <div class="content-wrapper">
       <div id="process-imagearea">
         <img src="img/handshake.jpg" alt="image of handhake" />
       </div>
-      <h2>Getting A Cash Offer For Your Home</h2>
-      <h3>Starts Here</h3>
-      <div id="process-input-fields" class="process-inputs">
+      <div id="process-content">
+        <h2>Getting A Cash Offer For Your Home</h2>
+        <h3>Starts Here</h3>
+        <!-- <div id="process-input-fields" class="process-inputs"> -->
         <p>
           Just give us some basic information to work from. <br>We can create an initial quote and will contact you to
           explain
           our process and how we can be of service.<br>No commitments or obligations, just information.
         </p>
         <form id="process-input-fields" class="process-inputs" onsubmit="return false">
-          <label for="name">Name:</label>
-          <input type="text" maxlength="50" placeholder="*Name" required>
-          <label for="email">Email:</label>
-          <input type="email" maxlength="50" placeholder="*Email" required>
-          <label for="phone">Phone:</label>
-          <input type="text" maxlength="50" placeholder="*Phone" required>
-          <label for="address">Property Address:</label>
-          <input type="text" maxlength="150" placeholder="*Property Address" required>
-          <label for="message">Additional information:</label>
-          <textarea id="process-textarea"
-            placeholder="Comments (Please include any information that may help us to valuate the property. For example if the AC doesn't work or the roof has a leak, etc.)">
-          </textarea>
+          <label for="process-name">Name:</label>
+          <input type="text" id="process-name" maxlength="50" placeholder="*Name" class="process-input-fields">
+          <label for="process-email">Email:</label>
+          <input type="text" id="process-email" maxlength="50" placeholder="*Email" class="process-input-fields">
+          <label for="process-phone">Phone:</label>
+          <input type="text" id="process-phone" maxlength="50" placeholder="*Phone" class="process-input-fields">
+          <label for="process-address">Property Address:</label>
+          <input type="text" id="process-address" maxlength="150" placeholder="*Property Address"
+            class="process-input-fields">
+          <label for="process-textarea">Additional information:</label>
+          <textarea id="process-textarea" class="process-input-fields"
+            placeholder="Please include any important information. For example if the AC doesn't work or the roof has a leak, etc."></textarea>
           <input id="process-button" type="submit" value="Submit" onclick="processThankYou()">
         </form>
+        <!-- </div> -->
+        <div id="process-submission-thanks" class="hidden">
+          <p>Thank you for contacting us! We will be in touch soon!</p>
+        </div>
       </div>
-      <div id="process-submission-thanks" class="hidden">
-        <p>Thank you for contacting us! We will be in touch soon!</p>
-      </div>
-
     </div>
   </div>
 
+  <!-- ************************** About Us Section **************************** -->
   <div id="aboutus-section">
     <div class="content-wrapper">
       <h2>About Us</h2>
@@ -105,6 +108,8 @@
     </div>
   </div>
 
+
+  <!-- *********************** Contact Us Section ****************************** -->
   <div id="contactus-section">
     <div class="content-wrapper">
       <div id="contactus-imagearea">
@@ -123,20 +128,22 @@
       </div>
       <div class="contactus-social">
         <p><a href="https://www.facebook.com/QualityNeighborhood/" target="_blank" rel="noopener"><i
-          class="fa-brands fa-square-facebook"></i></a></p>
-    <p><a href="https://www.instagram.com/qualityneighborhoodproperties" target="_blank" rel="noopener"><i
-          class="fa-brands fa-square-instagram"></i></a></p>
+              class="fa-brands fa-square-facebook"></i></a></p>
+        <p><a href="https://www.instagram.com/qualityneighborhoodproperties" target="_blank" rel="noopener"><i
+              class="fa-brands fa-square-instagram"></i></a></p>
       </div>
       <form id="contactus-input-fields" class="contactus-inputs" onsubmit="return false">
-        <label for="name">Name:</label>
+        <label for="contactus-name">Name:</label>
         <input type="text" id="contactus-name" name="name" maxlength="50" placeholder="*Name">
-        <label for="email">Email:</label>
-        <input type="email" id="contactus-email" maxlength="50" placeholder="*Email">
-        <label for="message">Message:</label>
+        <label for="contactus-email">Email:</label>
+        <input type="text" id="contactus-email" maxlength="50" placeholder="*Email">
+        <label for="contactus-information">Message:</label>
         <textarea id="contactus-information" placeholder="How can we be of help?"></textarea>
         <input id="contactus-button" type="submit" value="Submit" onclick="contactUsThankYou()">
       </form>
-      <div id="contactus-submission-thanks" class="hidden" <h4>Thank you for contacting us! We will be in touch soon.
+      <div id="contactus-submission-thanks" class="hidden">
+        <h4>
+          Thank you for contacting us! We will be in touch soon.
         </h4>
       </div>
     </div>

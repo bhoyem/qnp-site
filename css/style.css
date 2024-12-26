@@ -161,7 +161,12 @@ header .content-wrapper {
 }
 
 #process-imagearea img {
-  max-width: 50%;
+  max-width: 49%;
+  outline: 1px solid cyan;
+}
+
+#process-content {
+  outline: 1px solid orange;
 }
 
 .process-inputs {
@@ -170,11 +175,16 @@ header .content-wrapper {
   align-items: center;
 }
 
+.process-input-fields {
+  width: 80%;
+  color: black;
+}
+
 #process-textarea {
   padding: 0;
   margin: 0;
-  width: 100%;
-  color:#222;
+  height: 100px;
+  color: #222;
 }
 
 #aboutus-section {
@@ -195,12 +205,24 @@ header .content-wrapper {
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-items: center;
 }
 
 .contactus-contact {
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+
+.contactus-social {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  height: 1em;
+  align-items: center;
+  /* outline: 2px solid yellowgreen; */
+  font-size: 3em;
+  padding: 15px 0px;
 }
 
 #contactus-submission-thanks,
@@ -211,18 +233,19 @@ header .content-wrapper {
 }
 
 .contactus-inputs {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 #contactus-name,
-#contactus-email {
-  width: 50%;
+#contactus-email,
+#contactus-information {
+  width: 80%;
 }
 
 #contactus-information {
-  width: 50%;
   height: 100px;
 }
 
@@ -249,9 +272,11 @@ footer .content-wrapper {
   justify-content: space-around;
   align-items: center;
   width: 50%;
-  outline: 2px solid yellowgreen;
+  height: 1em;
+  /* outline: 2px solid yellowgreen; */
   font-size: 3em;
   color: white;
+  padding: 15px 0px;
 }
 
 a:link,
@@ -282,8 +307,16 @@ textarea::placeholder {
   /* TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
   Style adjustments for tablets 
   TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT */
-  process-section .content-wrapper {
-    margin: 0 10px 0 0;
+  #process-section .content-wrapper {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    flex-direction: row;
+  }
+
+  #process-content {
+    width: 49%;
   }
 
 }
@@ -380,7 +413,7 @@ textarea::placeholder {
    Modify as content requires.
    ========================================================================== */
 
-@media @media only screen and (min-width: 35em) {
+@media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
 
