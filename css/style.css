@@ -170,6 +170,13 @@ header .content-wrapper {
   align-items: center;
 }
 
+#process-textarea {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  color:#222;
+}
+
 #aboutus-section {
   color: white;
   background-color: #160159;
@@ -196,7 +203,8 @@ header .content-wrapper {
   text-align: center;
 }
 
-#contactus-submission-thanks, #process-submission-thanks {
+#contactus-submission-thanks,
+#process-submission-thanks {
   margin: 25px 0;
   font-style: italic;
   font-size: 1.5em;
@@ -208,7 +216,8 @@ header .content-wrapper {
   align-items: center;
 }
 
-#contactus-name, #contactus-email {
+#contactus-name,
+#contactus-email {
   width: 50%;
 }
 
@@ -245,7 +254,8 @@ footer .content-wrapper {
   color: white;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
   color: white;
 }
 
@@ -261,7 +271,8 @@ input[type=text] {
   font-style: italic;
 } */
 
-input::placeholder, textarea::placeholder{
+input::placeholder,
+textarea::placeholder {
   font-style: italic;
 }
 
