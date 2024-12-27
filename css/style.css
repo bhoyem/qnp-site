@@ -160,9 +160,13 @@ header .content-wrapper {
   text-align: center;
 }
 
-#process-imagearea img {
-  max-width: 30%;
+#process-imagearea  {
+  max-width: 50%;
   outline: 1px solid cyan;
+}
+
+#handshake-pic {
+  width: 100%;
 }
 
 #process-content {
@@ -312,14 +316,16 @@ textarea::placeholder {
     margin: 0;
     padding: 0;
     border: 0;
+    /* display: inline-block; */
+
     flex-direction: row;
     text-align: left;
     /* flex-wrap: wrap; */
-    align-content: flex-start;
+    /* align-content: flex-start; */
   }
 
   .process-input-fields {
-    width: auto;
+    /* width: auto; */
   }
 
   #process-content {
