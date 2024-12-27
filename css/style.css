@@ -161,7 +161,7 @@ header .content-wrapper {
 }
 
 #process-imagearea img {
-  max-width: 49%;
+  max-width: 30%;
   outline: 1px solid cyan;
 }
 
@@ -313,10 +313,17 @@ textarea::placeholder {
     padding: 0;
     border: 0;
     flex-direction: row;
+    text-align: left;
+    /* flex-wrap: wrap; */
+    align-content: flex-start;
+  }
+
+  .process-input-fields {
+    width: auto;
   }
 
   #process-content {
-    width: 49%;
+    width: 50%;
   }
 
 }
