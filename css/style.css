@@ -85,10 +85,9 @@ textarea {
    ========================================================================== */
 
 .content-wrapper {
-  outline: 3px dotted red;
+  /* outline: 3px dotted red; */
   width: 95%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 0px 20px 0px;
   /* margin: 10px; */
 }
 
@@ -119,7 +118,7 @@ header {
   align-items: center;
   align-content: center;
   /* background-color: white; */
-  border: solid, darkorange, 1px;
+  /* outline: 1px solid darkorange; */
   margin: 10px 0 0 0;
 }
 
@@ -147,7 +146,9 @@ header .content-wrapper {
 }
 
 #process-section h2 {
-  margin: 10px 0 0 0;
+  /* margin: 10px 0 0 0; */
+  margin: 0;
+  padding: 0;
 }
 
 #process-section h3 {
@@ -160,9 +161,9 @@ header .content-wrapper {
   text-align: center;
 }
 
-#process-imagearea  {
+#process-imagearea {
   max-width: 50%;
-  outline: 1px solid cyan;
+  /* outline: 1px solid cyan; */
 }
 
 #handshake-pic {
@@ -170,7 +171,7 @@ header .content-wrapper {
 }
 
 #process-content {
-  outline: 1px solid orange;
+  /* outline: 1px solid orange; */
 }
 
 .process-inputs {
@@ -330,6 +331,7 @@ textarea::placeholder {
 
   #process-content {
     width: 50%;
+    padding: 20px;
   }
 
 }
