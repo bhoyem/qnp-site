@@ -1,7 +1,7 @@
 let processImageArea = document.getElementById("process-imagearea");
 let processSubmissionThanks = document.getElementById("process-submission-thanks");
 let contactUsSubmissionThanks = document.getElementById("contactus-submission-thanks")
-let processInputs = document.getElementById("process-input-fields");
+let processInputs = document.getElementById("process-inputs-div");
 let contactUsInputFields = document.getElementById("contactus-input-fields");
 
 function hideElement() {
