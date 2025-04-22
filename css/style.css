@@ -183,6 +183,12 @@ header .content-wrapper {
 .process-input-fields {
   width: 80%;
   color: black;
+  border-radius: 10px;
+}
+
+#process-name, #process-email, #process-phone, #process-address {
+  min-height: 30px;
+
 }
 
 #process-textarea {
