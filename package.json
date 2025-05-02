@@ -20,5 +20,12 @@
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1",
     "webpack-merge": "^5.9.0"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "nodemailer": "^6.10.1"
+  }
+  {
+  "type": "module"
   }
 }

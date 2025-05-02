@@ -180,19 +180,19 @@ header .content-wrapper {
   align-items: center;
 }
 
-.process-input-fields {
+.process-input-fields, .contactus-input-fields {
   width: 80%;
   color: black;
   border-radius: 10px;
 }
 
-#process-name, #process-email, #process-phone, #process-address {
+#process-name, #process-email, #process-phone, #process-address,
+#contactus-name, #contactus-email {
   min-height: 30px;
-
 }
 
 #process-textarea {
-  padding: 0;
+  padding: 10px 10px 10px 0;
   margin: 0;
   height: 100px;
   color: #222;
@@ -310,6 +310,7 @@ input[type=text] {
 input::placeholder,
 textarea::placeholder {
   font-style: italic;
+  padding-left: 10px;
 }
 
 
