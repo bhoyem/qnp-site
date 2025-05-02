@@ -1,9 +1,9 @@
-import emailjs from 'emailjs-com';
-import apiKeys from './apikeys';
+// import emailjs from 'emailjs-com';
+// import apiKeys from './apikeys';
 
 // Initialize emailjs with the public key from apiKeys
-emailjs.init(apiKeys.publicKey);
-console.log(apiKeys.publicKey)
+// emailjs.init(apiKeys.publicKey);
+// console.log(apiKeys.publicKey)
 
 let processImageArea = document.getElementById("process-imagearea");
 let processSubmissionThanks = document.getElementById(

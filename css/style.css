@@ -180,14 +180,19 @@ header .content-wrapper {
   align-items: center;
 }
 
-.process-input-fields, .contactus-input-fields {
+.process-input-fields,
+.contactus-input-fields {
   width: 80%;
   color: black;
   border-radius: 10px;
 }
 
-#process-name, #process-email, #process-phone, #process-address,
-#contactus-name, #contactus-email {
+#process-name,
+#process-email,
+#process-phone,
+#process-address,
+#contactus-name,
+#contactus-email {
   min-height: 30px;
 }
 
@@ -196,6 +201,12 @@ header .content-wrapper {
   margin: 0;
   height: 100px;
   color: #222;
+}
+
+button {
+  margin-top: 15px;
+  background-color: green;
+  color: red;
 }
 
 #aboutus-section {
