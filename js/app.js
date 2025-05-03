@@ -58,13 +58,4 @@ document.getElementById("process-button").addEventListener("click", function (ev
     address: document.getElementById("process-address").value,
     message: document.getElementById("process-textarea").value,
   };
-
-  // Use emailjs to send the email
-  emailjs.send('service_id', 'template_id', formData)
-    .then(() => {
-      processThankYou();
-    })
-    .catch((error) => {
-      console.error("Error sending email:", error);
-    });
 });

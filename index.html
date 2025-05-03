@@ -71,19 +71,20 @@
         <form id="process-inputs-div" class="process-inputs" method="POST" action="javascript:void(0);">
           <label for="process-name">Name:</label>
           <input type="text" id="process-name" name="process-name" maxlength="50" placeholder="*Name"
-            class="process-input-fields" />
+            class="process-input-fields" required />
           <label for="process-email">Email:</label>
           <input type="text" id="process-email" name="process-email" maxlength="50" placeholder="*Email"
-            class="process-input-fields" />
+            class="process-input-fields" required />
           <label for="process-phone">Phone:</label>
           <input type="text" id="process-phone" name="process-phone" maxlength="50" placeholder="*Phone"
-            class="process-input-fields" />
+            class="process-input-fields" required />
           <label for="process-address">Property Address:</label>
           <input type="text" id="process-address" name="process-address" maxlength="150" placeholder="*Property Address"
-            class="process-input-fields" />
+            class="process-input-fields" required />
           <label for="process-textarea">Additional information:</label>
           <textarea id="process-textarea" name="process-textarea" class="process-input-fields"
-            placeholder="Please include any important information. For example if the AC doesn't work or the roof has a leak, etc."></textarea>
+            placeholder="Please include any important information. For example if the AC doesn't work or the roof has a leak, etc."
+            required></textarea>
           <button id="process-button" type="submit" value="Submit" onclick="sendEmail(); processThankYou()">
             Submit
           </button>
@@ -186,7 +187,7 @@
         <label for="contactus-information">Message:</label>
         <textarea id="contactus-information" placeholder="How can we be of help?"
           class="contactus-input-fields"></textarea>
-        <input id="contactus-button" type="submit" value="Submit" onclick="contactUsThankYou()" />
+        <button id="contactus-button" type="submit" value="Submit" onclick="contactUsThankYou()">Submit</button>
       </form>
       <div id="contactus-submission-thanks" class="hidden">
         <h4>Thank you for contacting us! We will be in touch soon.</h4>

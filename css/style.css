@@ -205,8 +205,10 @@ header .content-wrapper {
 
 button {
   margin-top: 15px;
-  background-color: green;
-  color: red;
+  width: 20%;
+  height: 1.6rem;
+  border-radius: 7px;
+  background-color: lightgray;
 }
 
 #aboutus-section {
@@ -299,6 +301,10 @@ footer .content-wrapper {
   font-size: 3em;
   color: white;
   padding: 15px 0px;
+}
+
+.copyright {
+  font-size: .5rem;
 }
 
 a:link,
