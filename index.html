@@ -85,9 +85,11 @@
           <textarea id="process-textarea" name="process-textarea" class="process-input-fields"
             placeholder="Please include any important information. For example if the AC doesn't work or the roof has a leak, etc."
             required></textarea>
-          <button id="process-button" type="submit" value="Submit" onclick="sendEmail(); processThankYou()">
-            Submit
-          </button>
+          <div class="button-container">
+            <button id="process-button" type="submit" value="Submit" onclick="sendEmail(); processThankYou()">
+              Submit
+            </button>
+          </div>
         </form>
 
         <script>
@@ -155,42 +157,46 @@
   <div id="contactus-section">
     <div class="content-wrapper">
       <div id="contactus-imagearea">
-        <img src="" alt="" />
+        <img id="telephone-pic" src="" alt="" />
       </div>
-      <h2>Contact Us</h2>
-      <p>
-        Let us know if you have any questions or want information about
-        something beyond selling your house. We are always happy to hear from
-        you. You can reach us by email, phone, text, social media, or just use
-        the form here.
-      </p>
-      <div class="contactus-contact">
-        <email>contact@qualityneighborhood.com</email>
-        <phone>346-702-4040</phone>
-      </div>
-      <div class="contactus-social">
+      <div id="contactus-content">
+        <h2>Contact Us</h2>
         <p>
-          <a href="https://www.facebook.com/QualityNeighborhood/" target="_blank" rel="noopener"><i
-              class="fa-brands fa-square-facebook"></i></a>
+          Let us know if you have any questions or want information about
+          something beyond selling your house. We are always happy to hear from
+          you. You can reach us by email, phone, text, social media, or just use
+          the form here.
         </p>
-        <p>
-          <a href="https://www.instagram.com/qualityneighborhoodproperties" target="_blank" rel="noopener"><i
-              class="fa-brands fa-square-instagram"></i></a>
-        </p>
-      </div>
-      <form id="contactus-input-fields" class="contactus-inputs" onsubmit="return false">
-        <label for="contactus-name">Name:</label>
-        <input type="text" id="contactus-name" name="name" maxlength="50" placeholder="*Name"
-          class="contactus-input-fields" />
-        <label for="contactus-email">Email:</label>
-        <input type="text" id="contactus-email" maxlength="50" placeholder="*Email" class="contactus-input-fields" />
-        <label for="contactus-information">Message:</label>
-        <textarea id="contactus-information" placeholder="How can we be of help?"
-          class="contactus-input-fields"></textarea>
-        <button id="contactus-button" type="submit" value="Submit" onclick="contactUsThankYou()">Submit</button>
-      </form>
-      <div id="contactus-submission-thanks" class="hidden">
-        <h4>Thank you for contacting us! We will be in touch soon.</h4>
+        <div class="contactus-contact">
+          <email>contact@qualityneighborhood.com</email>
+          <phone>346-702-4040</phone>
+        </div>
+        <div class="contactus-social">
+          <p>
+            <a href="https://www.facebook.com/QualityNeighborhood/" target="_blank" rel="noopener"><i
+                class="fa-brands fa-square-facebook"></i></a>
+          </p>
+          <p>
+            <a href="https://www.instagram.com/qualityneighborhoodproperties" target="_blank" rel="noopener"><i
+                class="fa-brands fa-square-instagram"></i></a>
+          </p>
+        </div>
+        <form id="contactus-input-fields" class="contactus-inputs" onsubmit="return false">
+          <label for="contactus-name">Name:</label>
+          <input type="text" id="contactus-name" name="name" maxlength="50" placeholder="*Name"
+            class="contactus-input-fields" />
+          <label for="contactus-email">Email:</label>
+          <input type="text" id="contactus-email" maxlength="50" placeholder="*Email" class="contactus-input-fields" />
+          <label for="contactus-information">Message:</label>
+          <textarea id="contactus-information" placeholder="How can we be of help?"
+            class="contactus-input-fields"></textarea>
+          <div class="button-container">
+            <button id="contactus-button" type="submit" value="Submit" onclick="contactUsThankYou()">Submit</button>
+          </div>
+        </form>
+        <div id="contactus-submission-thanks" class="hidden">
+          <h4>Thank you for contacting us! We will be in touch soon.</h4>
+        </div>
       </div>
     </div>
   </div>
@@ -220,7 +226,7 @@
         </p>
       </div>
       <div class="copyright">
-        <p>Copyright 2024 BHoyem Designs</p>
+        <p id="copyright">Copyright 2024 BHoyem Designs</p>
       </div>
     </div>
   </footer>

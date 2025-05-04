@@ -18,10 +18,10 @@ let contactUsInputFields = document.getElementById("contactus-input-fields");
 function hideElement() {
   if (window.innerWidth < 768) {
     processImageArea.classList.add("hidden");
-    console.log("hideElement");
+    // console.log("hideElement");
   } else {
     processImageArea.classList.remove("hidden");
-    console.log("unhideElement");
+    // console.log("unhideElement");
   }
 }
 
@@ -43,8 +43,8 @@ window.addEventListener("load", function () {
 
 window.addEventListener("resize", function () {
   hideElement();
-  console.log("window.innerWidth = " + this.window.innerWidth);
-  console.log("screen.width = " + this.screen.width);
+  // console.log("window.innerWidth = " + this.window.innerWidth);
+  // console.log("screen.width = " + this.screen.width);
 });
 
 // Function to handle form submission for process-inputs-div
