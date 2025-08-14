@@ -1,4 +1,4 @@
-function sendEmail() {
+function sendProcessEmail() {
     const templateParams = {
         processName: document.querySelector("#process-name").value,
         processEmail: document.querySelector("#process-email").value,
@@ -16,4 +16,22 @@ function sendEmail() {
             console.log("Error sending email:", error);
             alert("Failed to send email. Please try again.");
         });
+}
+
+function sendContactEmail() {
+    const templateParams = {
+        contactusName: document.querySelector("#contactus-name").value,
+        contactusEmail: document.querySelector("#contactus-email").value,
+        contactusInformation: document.querySelector("#contactus-information").value
+    }
+
+    emailjs
+        .send("service_qkpbvum", "contact-email-template", templateParams)
+        .then(() => {
+            alert("Email sent successfully!");
+        })
+        .catch((error) => {
+            console.log("Error sending email:", error);
+            alert("Failed to send email. Please try again.");
+        }); 
 }

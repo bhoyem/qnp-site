@@ -33,7 +33,7 @@
 </head>
 
 <body>
-  <!-- Add your site or application content here -->
+  <!-- ********************************* Header ************************************** -->
   <header>
     <div class="content-wrapper">
       <div class="header-top">
@@ -42,9 +42,15 @@
         </logo>
         <nav>
           <ul>
-            <li>The Process</li>
-            <li>About Us</li>
-            <li>Contact Us</li>
+            <li>
+              <a href="#process-section">The Process</a>
+            </li>
+            <li>
+              <a href="#aboutus-section">About Us</a>
+            </li>
+            <li>
+              <a href="#contactus-section">Contact Us</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -53,7 +59,7 @@
   </header>
 
   <!-- ******************************* Process Section ****************************** -->
-  <div id="process-section">
+  <section id="process-section">
     <div class="content-wrapper">
       <div id="process-imagearea">
         <img id="handshake-pic" src="img/handshake.jpg" alt="image of handhake" />
@@ -86,7 +92,7 @@
             placeholder="Please include any important information. For example if the AC doesn't work or the roof has a leak, etc."
             required></textarea>
           <div class="button-container">
-            <button id="process-button" type="submit" value="Submit" onclick="sendEmail(); processThankYou()">
+            <button id="process-button" type="submit" value="Submit" onclick="sendProcessEmail(); processThankYou()">
               Submit
             </button>
           </div>
@@ -123,7 +129,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- ************************** About Us Section **************************** -->
   <div id="aboutus-section">
@@ -154,7 +160,7 @@
   </div>
 
   <!-- *********************** Contact Us Section ****************************** -->
-  <div id="contactus-section">
+  <section id="contactus-section">
     <div class="content-wrapper">
       <div id="contactus-imagearea">
         <img id="telephone-pic" src="" alt="" />
@@ -183,7 +189,7 @@
         </div>
         <form id="contactus-input-fields" class="contactus-inputs" onsubmit="return false">
           <label for="contactus-name">Name:</label>
-          <input type="text" id="contactus-name" name="name" maxlength="50" placeholder="*Name"
+          <input type="text" id="contactus-name" name="contactus-name" maxlength="50" placeholder="*Name"
             class="contactus-input-fields" />
           <label for="contactus-email">Email:</label>
           <input type="text" id="contactus-email" maxlength="50" placeholder="*Email" class="contactus-input-fields" />
@@ -191,7 +197,8 @@
           <textarea id="contactus-information" placeholder="How can we be of help?"
             class="contactus-input-fields"></textarea>
           <div class="button-container">
-            <button id="contactus-button" type="submit" value="Submit" onclick="contactUsThankYou()">Submit</button>
+            <button id="contactus-button" type="submit" value="Submit" onclick="sendContactEmail(); "
+              contactUsThankYou()">Submit</button>
           </div>
         </form>
         <div id="contactus-submission-thanks" class="hidden">
@@ -199,7 +206,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <footer>
     <div class="content-wrapper">

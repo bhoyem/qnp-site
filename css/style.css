@@ -130,6 +130,18 @@ nav ul {
   padding: 0;
 }
 
+nav a:link, nav a:visited {
+  color:#160159;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color:#07517E;
+  font-weight: bold;
+}
+
+
+
 header .content-wrapper {
   display: flex;
   flex-direction: column;
@@ -308,12 +320,12 @@ footer .content-wrapper {
   font-size: .5rem;
 }
 
-a:link,
-a:visited {
+#contactus-section a:link,
+#contactus-section a:visited {
   color: white;
 }
 
-a:hover {
+#contactus-section a:hover {
   color: #44c9f5;
 }
 

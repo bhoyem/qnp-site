@@ -51,11 +51,11 @@ window.addEventListener("resize", function () {
 document.getElementById("process-button").addEventListener("click", function (event) {
   event.preventDefault(); // Prevent default form submission
 
-  const formData = {
-    name: document.getElementById("process-name").value,
-    email: document.getElementById("process-email").value,
-    phone: document.getElementById("process-phone").value,
-    address: document.getElementById("process-address").value,
-    message: document.getElementById("process-textarea").value,
-  };
+  // const formData = {
+  //   name: document.getElementById("process-name").value,
+  //   email: document.getElementById("process-email").value,
+  //   phone: document.getElementById("process-phone").value,
+  //   address: document.getElementById("process-address").value,
+  //   message: document.getElementById("process-textarea").value,
+  // };
 });
